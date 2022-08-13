@@ -17,3 +17,15 @@ fields:
 - type: file
   name: image
   label: image
+- name: option
+  type: select
+  default: Jekyll
+  config:
+    required: true
+    options: []
+    source:
+      type: documents
+      section: jekyll-posts
+      file: _posts/2019-01-29-about-bundler.md
+      path: categories
+  label: option
